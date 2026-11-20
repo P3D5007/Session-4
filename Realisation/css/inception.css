@@ -1,0 +1,140 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background-color: #0B0B0F;
+    color: #F2F2F5;
+    font-family: Arial, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #F2F2F5;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background-color: #16161D;
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #F5B301;
+}
+
+nav a {
+    margin-left: 24px;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    color: #F2F2F5;
+}
+
+nav a:hover {
+    color: #F5B301;
+}
+
+.movie-details {
+    max-width: 1000px;
+    margin: 70px auto;
+    padding: 0 24px;
+}
+
+.movie-back {
+    margin: 0 0 24px;
+}
+
+.movie-details-layout {
+    display: grid;
+    grid-template-columns: minmax(220px, 320px) minmax(0, 1fr);
+    gap: 40px;
+    align-items: start;
+}
+
+.movie-poster-column {
+    min-width: 0;
+}
+
+.movie-cover {
+    display: block;
+    width: 100%;
+    aspect-ratio: 2 / 3;
+    margin: 0 0 20px;
+    object-fit: cover;
+    border: 1px solid rgba(138, 138, 153, 0.22);
+    border-radius: 10px;
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.35);
+}
+
+.movie-poster-column .movie-credit {
+    margin: 0;
+    color: #8A8A99;
+}
+
+.movie-credit a {
+    color: #F5B301;
+    text-decoration: underline;
+}
+
+.movie-details h1 {
+    margin: 0 0 12px;
+    font-size: 42px;
+}
+
+.movie-details .movie-meta {
+    margin-bottom: 32px;
+    color: #F5B301;
+    font-size: 18px;
+}
+
+.movie-details .movie-description {
+    color: #8A8A99;
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+.movie-facts {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 16px;
+    margin: 32px 0;
+}
+
+.movie-fact {
+    padding: 18px;
+    background: #16161D;
+    border: 1px solid rgba(138, 138, 153, 0.22);
+    border-radius: 10px;
+}
+
+.movie-fact h2 {
+    margin: 0 0 8px;
+    color: #F5B301;
+    font-size: 16px;
+}
+
+.movie-fact p {
+    margin: 0;
+    color: #8A8A99;
+    line-height: 1.5;
+}
+
+footer {
+    padding: 30px;
+    text-align: center;
+    background-color: #16161D;
+    color: #8A8A99;
+}
+
